@@ -19,15 +19,15 @@ Bitcoinzero
 * Confirmation: 6 Blocks
 * Maturity: 120 Blocks
 * Blocks: -
-* Total Coins: 42,000,000 BZX
+* Max Coins: 99,999,999 BZX
 * Min TX Fee: 0.001 BZX
 * Block Size: 4MB
 
 
 Net Parameters
 ----------------
-* P2P Port=29101
-* RPC Port=29200
+* P2P Port=29301
+* RPC Port=29202
 * Client core=13.4
 * Client name=bitcoinzero.qt
 * Conf file=bitcoinzero.conf
@@ -99,12 +99,13 @@ Debian/Ubuntu Linux Daemon Build Instructions
 	data folder:
 	bitcoinzero
 
-	port 29101
-	rpc port 29200
+        port 29301
+        rpc port 29201
 
 Example bitcoinzero.conf Configuration
 ===================================================
 
+	rescan=0
 	listen=1
 	server=1
 	daemon=1

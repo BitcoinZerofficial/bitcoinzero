@@ -586,6 +586,8 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
                         "#rpcpassword=\n"
                         "#rpcusername=\n"
                         "maxconnections=16\n"
+                        "rescan=0\n"
+                        "#reindex=0\n"
                         "#connect=\n"
                         "#addnode=\n"
                         "#bznode=1\n"

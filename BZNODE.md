@@ -6,7 +6,7 @@ Bznode Instructions and Notes
 Prerequisites
 -------------
  - Ubuntu 16.04+
- - Port **29101** is open
+ - Port **29301** is open
  - Libraries to build from bitcoinzero source if you want to build it yourself
 
 Step 0. ON VPS: Acquire the binaries
@@ -21,10 +21,10 @@ Either
 	mkdir .bitcoinzero
 	cd .bitcoinzero
 	sudo apt-get install unzip
-	wget https://github.com/bitcoinzerotakeover/bitcoinzero/releases/download/chain/chainfiles.zip
-	unzip chainfiles.zip
+	wget https://hexxcoin.net/cf/chainfilesbin.zip
+	unzip chainfilesbin.zip
 	cd ..
-	wget https://github.com/bitcoinzerotakeover/bitcoinzero/releases/download/5.0.0.0/linux-x64.tar.gz
+	wget https://github.com/BitcoinZeroOfficial/BitcoinZero/releases/download/5.0.0.1/linux-x64.tar.gz
 	tar xvfz linux-x64.tar.gz
 	
 	./bitcoinzerod -daemon
@@ -43,12 +43,12 @@ or
 </details>
 	
 
-Step 1. ON VPS: Open port 29101 (Optional - only if firewall is running)
+Step 1. ON VPS: Open port 29301 (Optional - only if firewall is running)
 ----------------------
 **1.1.**  Run:
 
     sudo ufw allow ssh 
-    sudo ufw allow 29101
+    sudo ufw allow 29301
     sudo ufw default allow outgoing
     sudo ufw enable
 

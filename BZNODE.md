@@ -21,7 +21,7 @@ Either
 	mkdir .bitcoinzero
 	cd .bitcoinzero
 	sudo apt-get install unzip
-	wget https://hexxcoin.net/cf/chainfilesbin.zip
+	wget https://chainfiles.chainsilo.com/chainfilesbin.zip
 	unzip chainfilesbin.zip
 	cd ..
 	wget https://github.com/BitcoinZeroOfficial/BitcoinZero/releases/download/5.0.0.1/linux-x64.tar.gz

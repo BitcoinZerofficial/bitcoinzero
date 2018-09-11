@@ -1,7 +1,7 @@
 Bznode Instructions and Notes
 =============================
  - Version 0.1.0
- - Date: 23 August 2018
+ - Date: 11 September 2018
 
 Prerequisites
 -------------
@@ -37,7 +37,7 @@ or
 <summary><strong>Build from source</strong></summary>
 <strong>0.1.</strong>  Check out from source:
 
-    git clone https://github.com/bitcoinzerotakeover/bitcoinzero
+    git clone https://github.com/BitcoinZeroOfficial/bitcoinzero/
 
 <strong>0.2.</strong>  See [README.md](README.md) for instructions on building.
 </details>
@@ -59,7 +59,7 @@ Step 2. ON LOCAL MACHINE: First run on your Local Wallet
 <summary><strong>If you are using the qt wallet</strong></summary>
 <strong>2.0.</strong>  Open the wallet
 
-<strong>2.1.</strong>  Click Help -> Debug window -> Console
+<strong>2.1.</strong>  Click Help -> Debug Window -> Console
 
 <strong>2.2.</strong>  Generate bznodeprivkey:
 
@@ -94,7 +94,7 @@ Step 2. ON LOCAL MACHINE: First run on your Local Wallet
 
 <strong>2.3.</strong>  Get wallet address:
 
-    ./bitcoinzero-cli getaccountaddress XN1
+    ./bitcoinzero-cli getaccountaddress BZ1
 
 <strong>2.4.</strong>  Send to received address <strong>exactly 15000 BZX</strong> in <strong>1 transaction</strong>. Wait for 15 confirmations.
 
@@ -108,7 +108,7 @@ Step 2. ON LOCAL MACHINE: First run on your Local Wallet
 
 **2.6.**  Create file **bznode.conf** (in **~/.bitcoinzero**, **C:\Users\USER\AppData\Roaming\bitcoinzero** or **~/Library/Application Support/bitcoinzero** depending on your Operating System) containing the following info:
  - LABEL: A one word name you make up to call your node (ex. BZ1)
- - IP:PORT: Your bznode VPS's IP, and the port is always 29101.
+ - IP:PORT: Your bznode VPS's IP, and the port is always 29301.
  - BZNODEPRIVKEY: This is the result of your "bznode genkey" from earlier.
  - TRANSACTION HASH: The collateral tx. hash from the 15000 BZX deposit.
  - INDEX: The Index from the transaction hash
@@ -131,7 +131,7 @@ The output will look like:
 
 Sample of bznode.conf:
 
-    XN1 51.52.53.54:29100 XrxSr3fXpX3dZcU7CoiFuFWqeHYw83r28btCFfIHqf6zkMp1PZ4 d6fd38868bb8f9958e34d5155437d009b72dfd33fc28874c87fd42e51c0f74fdb 0
+    BZ1 51.52.53.54:29301 XrxSr3fXpX3dZcU7CoiFuFWqeHYw83r28btCFfIHqf6zkMp1PZ4 d6fd38868bb8f9958e34d5155437d009b72dfd33fc28874c87fd42e51c0f74fdb 0
 
 **2.7.** Lock unspent
 

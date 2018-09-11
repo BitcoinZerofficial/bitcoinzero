@@ -4833,8 +4833,8 @@ bool CWallet::InitLoadWallet() {
         if (nLoadWalletRet == DB_CORRUPT)
             return InitError(strprintf(_("Error loading %s: Wallet corrupted"), walletFile));
         else if (nLoadWalletRet == DB_NONCRITICAL_ERROR) {
-            InitWarning(strprintf(_("Notice %s! Imported keys will be rescanned at every start"
-                                            " Continue to rescan."),
+            InitWarning(strprintf(_("Notice! Imported keys will be rescanned at every start."
+                                            " Continue to rescan?"),
                                   walletFile));
         } else if (nLoadWalletRet == DB_TOO_NEW)
             return InitError(strprintf(_("Error loading %s: Wallet requires newer version of %s"),

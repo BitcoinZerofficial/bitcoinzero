@@ -22,7 +22,7 @@ static const int BZNODE_MIN_MNP_SECONDS             =  10 * 60; //PRE_ENABLE_TIM
 static const int BZNODE_EXPIRATION_SECONDS          =  65 * 60;
 static const int BZNODE_WATCHDOG_MAX_SECONDS        = 120 * 60;
 static const int BZNODE_NEW_START_REQUIRED_SECONDS  = 180 * 60;
-static const int BZNODE_COIN_REQUIRED               = 15;
+static const int BZNODE_COIN_REQUIRED               = 15000;
 static const int BZNODE_POSE_BAN_MAX_SCORE          = 5;
 //
 // The Bznode Ping Class : Contains a different serialize method for sending pings from bznodes throughout the network

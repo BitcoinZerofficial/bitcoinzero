@@ -24,7 +24,7 @@ Either
 	wget https://chainfiles.chainsilo.com/chainfilesbin.zip
 	unzip chainfilesbin.zip
 	cd ..
-	wget https://github.com/BitcoinZeroOfficial/BitcoinZero/releases/download/5.0.0.2/linux-x64.tar.gz
+	wget https://github.com/BitcoinZeroOfficial/BitcoinZero/releases/download/5.0.0.3/linux-x64.tar.gz
 	tar xvfz linux-x64.tar.gz
 	
 	./bitcoinzerod -daemon

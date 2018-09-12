@@ -4833,8 +4833,9 @@ bool CWallet::InitLoadWallet() {
         if (nLoadWalletRet == DB_CORRUPT)
             return InitError(strprintf(_("Error loading %s: Wallet corrupted"), walletFile));
         else if (nLoadWalletRet == DB_NONCRITICAL_ERROR) {
-            InitWarning(strprintf(_("Notice! Imported keys will be rescanned at every start."
-                                            " Continue to rescan?"),
+            InitWarning(strprintf(_("Notice! Rescan is needed to show your imported coins."
+                                    "        Without rescan you will only see the coins that have moved since the import. Use rescan=0 when no need to scan for imported coins."
+                                    "        To continue, click OK"),
                                   walletFile));
         } else if (nLoadWalletRet == DB_TOO_NEW)
             return InitError(strprintf(_("Error loading %s: Wallet requires newer version of %s"),

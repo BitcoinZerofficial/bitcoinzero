@@ -100,11 +100,11 @@ public:
         vSeeds.push_back(CDNSSeedData("5.79.119.106", "5.79.119.106"));
         vSeeds.push_back(CDNSSeedData("76.74.170.128", "76.74.170.128"));
         vSeeds.push_back(CDNSSeedData("81.171.19.63", "81.171.19.63"));
-        vSeeds.push_back(CDNSSeedData("seednode01.chainsilo.com", "seednode01.chainsilo.com"));
-        vSeeds.push_back(CDNSSeedData("seednode02.chainsilo.com", "seednode02.chainsilo.com"));
-        vSeeds.push_back(CDNSSeedData("seednode03.chainsilo.com", "seednode03.chainsilo.com"));
-        vSeeds.push_back(CDNSSeedData("seednode04.chainsilo.com", "seednode04.chainsilo.com"));
-        vSeeds.push_back(CDNSSeedData("seednode05.chainsilo.com", "seednode05.chainsilo.com"));
+        vSeeds.push_back(CDNSSeedData("81.171.29.144", "81.171.29.144"));
+        vSeeds.push_back(CDNSSeedData("95.211.244.14", "95.211.244.14"));
+        vSeeds.push_back(CDNSSeedData("81.17.60.209", "81.17.60.209"));
+        vSeeds.push_back(CDNSSeedData("81.17.60.210", "81.17.60.210"));
+        vSeeds.push_back(CDNSSeedData("81.17.60.211", "81.17.60.211"));
         base58Prefixes[PUBKEY_ADDRESS] = std::vector < unsigned char > (1, 75);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector < unsigned char > (1, 34);
         base58Prefixes[SECRET_KEY] = std::vector < unsigned char > (1, 210);

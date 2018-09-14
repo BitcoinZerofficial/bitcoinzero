@@ -14,7 +14,6 @@
 static const int HF_BZNODE_HEIGHT = 8001;
 static const int HF_BZNODE_PAYMENT_START = HF_BZNODE_HEIGHT + 576;
 static const int HF_FEE_CHECK = 16000;
-static const int HF_PAYEE_CHECK = 16000;
 static const int HF_FEE_PAYMENT_START = HF_BZNODE_HEIGHT;
 static const int HF_ALGO = 1;
 static const int HF_FEE_CHANGE = 999999;

@@ -148,7 +148,7 @@ bool IsBlockPayeeValid(const CTransaction &txNew, int nBlockHeight, CAmount bloc
         LogPrint("mnpayments", "IsBlockPayeeValid -- Valid bznode payment at height %d: %s", nBlockHeight, txNew.ToString());
         return true;
     } else {
-        if(nBlockHeight > HF_PAYEE_CHECK){
+        if(sporkManager.IsSporkActive(SPORK_8_BZNODE_PAYMENT_ENFORCEMENT)){
             return false;
         } else {
             LogPrintf("BZNode payment enforcement is disabled, accepting block\n");

@@ -581,14 +581,6 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
             if (configFile != NULL)
             {
                 std::string strHeader =
-                        "addnode=5.79.119.106:29301\n"
-                        "addnode=76.74.170.128:29301\n"
-                        "addnode=81.171.19.63:29301\n"
-                        "addnode=81.171.29.144:29301\n"
-                        "addnode=95.211.244.14:29301\n"
-                        "addnode=81.17.60.209:29301\n"
-                        "addnode=81.17.60.210:29301\n"
-                        "addnode=81.17.60.211:29301\n"
                         "#listen=1\n"
                         "#server=1\n"
                         "#rpcpassword=\n"
@@ -597,6 +589,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
                         "#rescan=0\n"
                         "#reindex=0\n"
                         "#connect=\n"
+                        "#addnode=\n"
                         "#bznode=1\n"
                         "#bznodeprivkey=123123123123123123123123 ## Replace with your bznode private key\n"
                         "#externalip=123.123.123.123:29100 ## Replace with your node external IP\n";

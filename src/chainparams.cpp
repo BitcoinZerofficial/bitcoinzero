@@ -119,11 +119,12 @@ public:
         checkpointData = (CCheckpointData)
 		{
 		boost::assign::map_list_of
-        (   0, uint256S("0x322bad477efb4b33fa4b1f0b2861eaf543c61068da9898a95062fdb02ada486f"))
-        (   1, uint256S("0x639d4e6db07825e29b299930ceb2b3bf90e033cb3b3d05dc9db036afca084aed"))
-        (  14, uint256S("0xffdd4dc36744a881e31d3cf7c0800631927ed3c3a358ead79db0e7cf78961f85"))
-        (4952, uint256S("0x080f7e0c158cef7cbca330625e2132af88cf296191b19bea9d374aef542523dd"))
-        (7155, uint256S("0x613b2da5049f7b0b19f3af636ddbd58c687e7e08720c78026937d88818a399d3")),
+        (    0, uint256S("0x322bad477efb4b33fa4b1f0b2861eaf543c61068da9898a95062fdb02ada486f"))
+        (    1, uint256S("0x639d4e6db07825e29b299930ceb2b3bf90e033cb3b3d05dc9db036afca084aed"))
+        (   14, uint256S("0xffdd4dc36744a881e31d3cf7c0800631927ed3c3a358ead79db0e7cf78961f85"))
+        ( 4952, uint256S("0x080f7e0c158cef7cbca330625e2132af88cf296191b19bea9d374aef542523dd"))
+        ( 7155, uint256S("0x613b2da5049f7b0b19f3af636ddbd58c687e7e08720c78026937d88818a399d3"))
+        (11175, uint256S("0x84445b39ce4e0510f1479daa842a909850436c5ab82b8958d4148ca0f7b97771")),
         1536274418, // * UNIX timestamp of last checkpoint block
         1000000,    // * total number of transactions between genesis and last checkpoint
                   //   (the tx=... number in the SetBestChain debug.log lines)

@@ -242,12 +242,6 @@ void Shutdown() {
     GenerateBitcoins(false, 0, Params());
     StopNode();
 
-    // STORE DATA CACHES INTO SERIALIZED DAT FILES
-    CFlatDB<CBznodePayments> flatdb2("bznpayments.dat", "magicBznodePaymentsCache");
-    flatdb2.Dump(mnpayments);
-    CFlatDB<CNetFulfilledRequestManager> flatdb4("netfulfilled.dat", "magicFulfilledCache");
-    flatdb4.Dump(netfulfilledman);
-
     StopTorControl();
     UnregisterNodeSignals(GetNodeSignals());
 
@@ -1910,21 +1904,8 @@ bool AppInit2(boost::thread_group &threadGroup, CScheduler &scheduler) {
 
     // LOAD SERIALIZED DAT FILES INTO DATA CACHES FOR INTERNAL USE
 
-    if (mnodeman.size()) {
-        uiInterface.InitMessage(_("Loading Bznode payment cache..."));
-        CFlatDB<CBznodePayments> flatdb2("bznpayments.dat", "magicBznodePaymentsCache");
-        if (!flatdb2.Load(mnpayments)) {
-            return InitError("Failed to load bznode payments cache from bznpayments.dat");
-        }
-    } else {
-        uiInterface.InitMessage(_("Bznode cache is empty, skipping payments and governance cache..."));
-    }
-
-    uiInterface.InitMessage(_("Loading fulfilled requests cache..."));
     CFlatDB<CNetFulfilledRequestManager> flatdb4("netfulfilled.dat", "magicFulfilledCache");
-    if (!flatdb4.Load(netfulfilledman)) {
-        return InitError("Failed to load fulfilled requests cache from netfulfilled.dat");
-    }
+    flatdb4.Load(netfulfilledman);
 
     // ********************************************************* Step 11c: update block tip in Dash modules
 

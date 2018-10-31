@@ -98,6 +98,14 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x322bad477efb4b33fa4b1f0b2861eaf543c61068da9898a95062fdb02ada486f"));
         assert(genesis.hashMerkleRoot == uint256S("0x31f49b23f8a1185f85a6a6972446e72a86d50ca0e3b3ffe217d0c2fea30473db"));
         vSeeds.push_back(CDNSSeedData("54.38.187.24", "54.38.187.24"));
+        vSeeds.push_back(CDNSSeedData("185.64.20.193", "185.64.20.193"));
+        vSeeds.push_back(CDNSSeedData("185.64.20.194", "185.64.20.194"));
+        vSeeds.push_back(CDNSSeedData("185.64.20.195", "185.64.20.195"));
+        vSeeds.push_back(CDNSSeedData("185.64.20.196", "185.64.20.196"));
+        vSeeds.push_back(CDNSSeedData("185.64.20.201", "185.64.20.201"));
+        vSeeds.push_back(CDNSSeedData("185.64.20.202", "185.64.20.202"));
+        vSeeds.push_back(CDNSSeedData("185.64.20.203", "185.64.20.203"));
+        vSeeds.push_back(CDNSSeedData("185.64.20.204", "185.64.20.204"));
         vSeeds.push_back(CDNSSeedData("5.79.119.106", "5.79.119.106"));
         vSeeds.push_back(CDNSSeedData("76.74.170.128", "76.74.170.128"));
         vSeeds.push_back(CDNSSeedData("81.171.19.63", "81.171.19.63"));
@@ -143,8 +151,9 @@ public:
         ( 4952, uint256S("0x080f7e0c158cef7cbca330625e2132af88cf296191b19bea9d374aef542523dd"))
         ( 7155, uint256S("0x613b2da5049f7b0b19f3af636ddbd58c687e7e08720c78026937d88818a399d3"))
         (11175, uint256S("0x84445b39ce4e0510f1479daa842a909850436c5ab82b8958d4148ca0f7b97771"))
-		(26136, uint256S("0xe4b2de4bfad0472351fbbdfc23246dd204bd04ee2ba3eac078edf703939b6e3d")),
-        1539599455, // * UNIX timestamp of last checkpoint block
+		(26136, uint256S("0xe4b2de4bfad0472351fbbdfc23246dd204bd04ee2ba3eac078edf703939b6e3d"))
+		(35000, uint256S("064014305617e963754efeee752c5cfc5e5eb0b1d104c690cf35e38c436af0dd3")),
+        1541007233, // * UNIX timestamp of last checkpoint block
         1000000,    // * total number of transactions between genesis and last checkpoint
                   //   (the tx=... number in the SetBestChain debug.log lines)
 		576.0 // * estimated number of transactions per day after checkpoint

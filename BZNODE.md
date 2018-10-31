@@ -24,7 +24,7 @@ Either
 	wget http://get.bzxchain.info
 	unzip chainfilesbin.zip
 	cd ..
-	wget https://github.com/BitcoinZeroOfficial/BitcoinZero/releases/download/5.0.0.6/linux-x64.tar.gz
+	wget https://github.com/BitcoinZeroOfficial/BitcoinZero/releases/download/5.0.0.7/linux-x64.tar.gz
 	tar xvfz linux-x64.tar.gz
 	
 	./bitcoinzerod -daemon

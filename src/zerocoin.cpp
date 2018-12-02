@@ -361,21 +361,17 @@ bool CheckZerocoinFoundersInputs(const CTransaction &tx, CValidationState &state
 				CScript FOUNDER_1_SCRIPT;
 				CScript FOUNDER_2_SCRIPT;
                 FOUNDER_1_SCRIPT = GetScriptForDestination(CBitcoinAddress("XWfdnGbXnBxeegrPJEvnYaNuwf6DXCruMX").Get());
-                if (nHeight < HF_FEE_CHANGE){
                 FOUNDER_2_SCRIPT = GetScriptForDestination(CBitcoinAddress("XQ4WEZTFP83gVhhLBKavwopz7U84JucR8w").Get());
-                }else{
-                FOUNDER_2_SCRIPT = GetScriptForDestination(CBitcoinAddress("XQ4WEZTFP83gVhhLBKavwopz7U84JucR8w").Get());
-				}
 				CAmount bznodePayment = GetBznodePayment(nHeight);
                 BOOST_FOREACH(const CTxOut &output, tx.vout)
 				{
-                    if (output.scriptPubKey == FOUNDER_1_SCRIPT && output.nValue == (int64_t)(6.75 * COIN))
+                    if (output.scriptPubKey == FOUNDER_1_SCRIPT && output.nValue == (int64_t)(7.5 * COIN))
 					{
 						found_1 = true;
                         continue;
                     }
 					
-                    if (output.scriptPubKey == FOUNDER_2_SCRIPT && output.nValue == (int64_t)(2.25 * COIN))
+                    if (output.scriptPubKey == FOUNDER_2_SCRIPT && output.nValue == (int64_t)(1.5 * COIN))
 					{
                         found_2 = true;
                         continue;

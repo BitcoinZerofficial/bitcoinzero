@@ -158,12 +158,9 @@ CBlockTemplate* BlockAssembler::CreateNewBlock(const CScript& scriptPubKeyIn)
 		// Take some reward away from us
         coinbaseTx.vout[0].nValue = -9 * COIN;
         FOUNDER_1_SCRIPT = GetScriptForDestination(CBitcoinAddress("XWfdnGbXnBxeegrPJEvnYaNuwf6DXCruMX").Get());
-        if (nHeight < HF_FEE_CHANGE){
         FOUNDER_2_SCRIPT = GetScriptForDestination(CBitcoinAddress("XQ4WEZTFP83gVhhLBKavwopz7U84JucR8w").Get());
-        }else
-        FOUNDER_2_SCRIPT = GetScriptForDestination(CBitcoinAddress("XQ4WEZTFP83gVhhLBKavwopz7U84JucR8w").Get());
-        coinbaseTx.vout.push_back(CTxOut(6.75 * COIN, CScript(FOUNDER_1_SCRIPT.begin(), FOUNDER_1_SCRIPT.end())));
-        coinbaseTx.vout.push_back(CTxOut(2.25 * COIN, CScript(FOUNDER_2_SCRIPT.begin(), FOUNDER_2_SCRIPT.end())));
+        coinbaseTx.vout.push_back(CTxOut(7.5 * COIN, CScript(FOUNDER_1_SCRIPT.begin(), FOUNDER_1_SCRIPT.end())));
+        coinbaseTx.vout.push_back(CTxOut(1.5 * COIN, CScript(FOUNDER_2_SCRIPT.begin(), FOUNDER_2_SCRIPT.end())));
 	}
 	 
     // Add dummy coinbase tx as first transaction

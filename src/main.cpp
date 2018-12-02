@@ -1880,10 +1880,10 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params &consensusParams)
             if (nHeight == 0) // Genesis block is 0 coins
                 return 0;
 
-            else if (nHeight <= 7156)
+            else if (nHeight <= HF_FORK_END)
                 return 0 * COIN;
 			
-            else if (nHeight <= 8000)
+            else if (nHeight <= HF_FORK_REW)
                 return 1 * COIN;
 			
             else
@@ -2675,7 +2675,7 @@ bool ConnectBlock(const CBlock &block, CValidationState &state, CBlockIndex *pin
         const CTransaction &tx = block.vtx[i];
 
         uint256 txHash = tx.GetHash();
-        if (txIds.count(txHash) > 0 && (fTestNet || pindex->nHeight >= HF_BZNODE_HEIGHT))
+        if (txIds.count(txHash) > 0 && (fTestNet || pindex->nHeight >= HF_FORK_END))
             return state.DoS(100, error("ConnectBlock(): duplicate transactions in the same block"),
                              REJECT_INVALID, "bad-txns-duplicatetxid");
         txIds.insert(txHash);
@@ -4174,7 +4174,7 @@ bool ContextualCheckBlock(const CBlock &block, CValidationState &state, CBlockIn
     }
 
     // Enforce block.nVersion=2 rule that the coinbase starts with serialized block height
-   if (nHeight >= HF_BZNODE_HEIGHT)
+   if (nHeight >= HF_FORK_END)
 	{
         CScript expect = CScript() << nHeight;
         if (block.vtx[0].vin[0].scriptSig.size() < expect.size() ||

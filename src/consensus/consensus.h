@@ -11,15 +11,14 @@
 #include <stdint.h>
 
 // HF constants
-static const int HF_BZNODE_HEIGHT = 8001;
-static const int HF_BZNODE_PAYMENT_START = HF_BZNODE_HEIGHT + 576;
-static const int HF_FEE_CHECK = 16000;
-static const int HF_PAYEE_CHECK = 16000;
-static const int HF_FEE_PAYMENT_START = HF_BZNODE_HEIGHT;
+static const int HF_BZNODE_PAYMENT_START = 2000;
+static const int HF_FEE_CHECK = 4000;
+static const int HF_PAYEE_CHECK = 4000;
+static const int HF_FEE_PAYMENT_START = 577;
 static const int HF_ALGO = 1;
-static const int HF_FEE_CHANGE = 999999;
-static const int HF_FORK_END = 7156;
-static const int HF_FORK_DGW = 8000;
+static const int HF_FORK_END = 46;
+static const int HF_FORK_DGW = 100;
+static const int HF_FORK_REW = 576;
 
 /** The maximum allowed size for a serialized block, in bytes (only for buffer size limits) */
 static const unsigned int MAX_BLOCK_SERIALIZED_SIZE = 4000000;

@@ -19,9 +19,15 @@ Either
 <strong>0.1</strong> Install prebuild client and full chain
 
 
-        wget https://github.com/BitcoinZeroOfficial/BitcoinZero/releases/download/5.0.1.0/linux-x64.tar.gz
+	wget https://github.com/BitcoinZeroOfficial/BitcoinZero/releases/download/5.0.1.0/linux-x64.tar.gz
 	tar xvfz linux-x64.tar.gz
-	
+	---
+	(optional to remove old chain):
+	cd .bitcoinzero
+	rm -f -r blocks
+	rm -f -r chainsate
+	cd ..
+	---	
 	./bitcoinzerod -daemon
 	./bitcoinzero-cli getinfo
 </details>
